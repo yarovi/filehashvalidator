@@ -104,7 +104,7 @@ public class FileHashValidator {
 	 * A dummy method that represents dead code. This method does not perform any
 	 * useful function and is included for demonstration purposes only.
 	 */
-	public static void deadCodeMethod() {
+	private static void deadCodeMethod() {
 		// This code is never called and serves no purpose.
 		logger.info("This is dead code.");
 	}
