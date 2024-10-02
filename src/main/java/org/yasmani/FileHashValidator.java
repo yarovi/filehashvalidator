@@ -7,6 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.logging.Logger;
 
 /**
  * Class for validating file hashes. This class provides methods to calculate
@@ -15,6 +16,12 @@ import java.security.NoSuchAlgorithmException;
  */
 public class FileHashValidator {
 
+	
+	public FileHashValidator() {
+		super();
+	}
+
+	private static final Logger logger = Logger.getLogger(FileHashValidator.class.getName());
 	/**
 	 * Calculates the SHA-256 hash of a file.
 	 *
@@ -91,5 +98,14 @@ public class FileHashValidator {
 
 		// Compare the hashes
 		return currentFileHashHex.equals(savedHash.trim());
+	}
+
+	/**
+	 * A dummy method that represents dead code. This method does not perform any
+	 * useful function and is included for demonstration purposes only.
+	 */
+	public static void deadCodeMethod() {
+		// This code is never called and serves no purpose.
+		logger.info("This is dead code.");
 	}
 }
